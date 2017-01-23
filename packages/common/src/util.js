@@ -32,7 +32,8 @@ var request = require('request').defaults({
   gzip: true,
   pool: {
     maxSockets: Infinity
-  }
+  },
+  forever: true
 });
 var retryRequest = require('retry-request');
 var streamEvents = require('stream-events');
